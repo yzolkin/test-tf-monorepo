@@ -4,7 +4,7 @@ module "test" {
   version = "1.0.2"
 }
 
- 
+
 output "test" {
   value = module.test.foo
 }
@@ -19,6 +19,6 @@ module "test_gitlab" {
 
 
 variables "test" {
-  type = string
+  type    = string
   default = "Hello, World!"
 }
